@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia FitLife</title>
+  <link rel="stylesheet" href="script.css">
+</head>
+<body>
+  <header>
+    <h1>🏋️ Academia FitLife</h1>
+    <nav>
+      <ul>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Transforme seu corpo e mente</h2>
+      <p>Treine com os melhores profissionais</p>
+      <button onclick="mostrarAlerta()">Quero me inscrever!</button>
+    </div>
+  </section>
+
+  <section id="planos">
+    <h2>💳 Nossos Planos</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg" alt="Plano mensal">
+        <h3>Mensal</h3>
+        <p>R$ 99,00</p>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg" alt="Plano trimestral">
+        <h3>Trimestral</h3>
+        <p>R$ 270,00</p>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg" alt="Plano anual">
+        <h3>Anual</h3>
+        <p>R$ 900,00</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>📞 Contato</h2>
+    <form onsubmit="enviarFormulario(event)">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu email" required>
+      <textarea placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Academia FitLife. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
